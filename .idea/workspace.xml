@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="yup">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CreateScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Outlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PowerHouseDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Schedule.java" afterDir="false" />
+    <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="first build. tasmota outlet turns on/off.">
+      <change afterPath="$PROJECT_DIR$/src/Zone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/TasmotaTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TasmotaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PowerHouseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PowerHouseDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Schedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617647158152</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first build. tasmota outlet turns on/off.">
+      <created>1617690013411</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617690013411</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +97,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="yup" />
-    <option name="LAST_COMMIT_MESSAGE" value="yup" />
+    <MESSAGE value="first build. tasmota outlet turns on/off." />
+    <option name="LAST_COMMIT_MESSAGE" value="first build. tasmota outlet turns on/off." />
   </component>
 </project>
