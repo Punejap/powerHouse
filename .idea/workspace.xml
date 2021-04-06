@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="">
+    <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="yup">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CreateScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Outlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PowerHouseDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Schedule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TasmotaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TasmotaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/TasmotaTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TasmotaTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,12 +21,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1qlCJ53GSct1rZLs98konLKrWgJ" />
   <component name="ProjectViewState">
@@ -28,7 +38,30 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Application.PowerHouseDriver">
+    <configuration name="PowerHouseDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PowerHouseDriver" />
+      <module name="powerHouse" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TasmotaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TasmotaTest" />
+      <module name="powerHouse" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PowerHouseDriver" />
+        <item itemvalue="Application.TasmotaTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -39,6 +72,14 @@
       <option name="presentableId" value="Default" />
       <updated>1617644717805</updated>
     </task>
+    <task id="LOCAL-00001" summary="yup">
+      <created>1617647158152</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617647158152</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -51,5 +92,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="yup" />
+    <option name="LAST_COMMIT_MESSAGE" value="yup" />
   </component>
 </project>
