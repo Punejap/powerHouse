@@ -10,8 +10,6 @@ public class PowerHouseDriver {
         ArrayList<String> zone1 = new ArrayList<>();
 
         Outlet one = new Outlet("192.168.1.224");
-        //hello world
         one.togglePower();
-        //hey to you too hmmm
     }
 }
