@@ -1,12 +1,11 @@
 import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
 
 //this class defines methods and fields for outlet components.
 public class Outlet extends Component {
 
-    protected String kwh;
+    protected String kwh;//our working outlets do provide useage data which can be used to set scenes
 
     public Outlet(String ip) {
         super(ip);

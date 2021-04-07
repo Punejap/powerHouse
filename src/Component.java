@@ -4,7 +4,7 @@ import java.io.IOException;
 public abstract class Component {
 
     protected final String ip;
-    protected int powerStatus;
+    protected int powerStatus; //0 for off, 1 for on. Can be a range in case of dimmable bulbs
 
     public Component(String ip){
         this.ip = ip;

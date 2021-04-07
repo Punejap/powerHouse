@@ -1,22 +1,14 @@
 import java.io.IOException;
 
-//this class will contain methods to create custom schedules for however many components and however many
-//parameters the user declares
-public class Schedule extends Component implements CreateScene {
+//this class will contain methods and fields to create custom schedules for components based on time
+//ex. set schedule for outdoor lights, turn specific components off during sleeping hours
+
+public class Schedule implements CreateScene {
 
     protected String timeOn;
     protected String timeOff;
 
-    public Schedule(String ip) {
-        super(ip);
-    }
-
-    @Override
-    public void togglePower() throws IOException {
-
-    }
-
-    //schedules could be considered scenes, but a scene containts mmuch more info
+    //schedules could be considered scenes, but a scene contains much more info
     @Override
     public void executeScene() {
 
