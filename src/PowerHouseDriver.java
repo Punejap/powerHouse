@@ -1,3 +1,5 @@
+import org.json.simple.parser.ParseException;
+
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.net.URL;
@@ -6,13 +8,14 @@ import java.util.ArrayList;
 
 public class PowerHouseDriver {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ParseException {
         ArrayList<String> zone1 = new ArrayList<>();
 
-        Outlet one = new Outlet("192.168.1.224");
-        Component two = new Outlet("192.168.1.209");
+        Outlet one = new Outlet("10.0.0.156");
+        //Component two = new Outlet("192.168.1.209");
 
         one.togglePower();
-        two.togglePower();
+        //two.togglePower();
+        System.out.println(one.getkWhToday());
     }
 }

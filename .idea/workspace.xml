@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="and another">
+    <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="fix comments">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_5_2021_2_24_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_5_2021_2_24_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Outlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/Outlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/powerHouse/PowerHouseDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/PowerHouseDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/Schedule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/powerHouse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/powerHouse.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Outlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Outlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PowerHouseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PowerHouseDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,12 +36,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/json-simple-1.1.jar/json-simple-1.1.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.PowerHouseDriver">
@@ -53,17 +53,6 @@
     <configuration name="TasmotaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TasmotaTest" />
       <module name="powerHouse" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
