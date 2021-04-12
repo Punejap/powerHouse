@@ -13,7 +13,8 @@ import java.util.Scanner;
 //this class defines methods and fields for outlet components.
 public class Outlet extends Component {
 
-    protected String kwh;//our working outlets do provide useage data which can be used to set scenes
+    protected double kWhToday;//our working outlets do provide useage data which can be used to set scenes
+    protected double kwhLimit;
 
     public Outlet(String ip) {
         super(ip);
@@ -29,12 +30,34 @@ public class Outlet extends Component {
 
     }
 
-    protected String readKwhData(){
+    public void powerOff() throws IOException{
+        URL powerToggle = new URL("http://" + this.getIp() + "/cm?cmnd=Power%20off");
+        URLConnection conToggle = powerToggle.openConnection();
+        conToggle.getInputStream();
 
-        return kwh;
     }
 
-    public String getkWhToday() throws IOException, ParseException {
+
+    public void setkWhToday(double kWhToday) {
+        this.kWhToday = kWhToday;
+    }
+
+    public double getKwhLimit() {
+        return kwhLimit;
+    }
+
+    public void setKwhLimit(double kwhLimit) {
+        this.kwhLimit = kwhLimit;
+    }
+
+    public void savePower() throws IOException {
+        if(kWhToday > kwhLimit) {
+            this.powerOff();
+            System.out.println("you done used too much power");
+        }
+    }
+
+    public double getkWhToday() throws IOException, ParseException {
         URL usageData = new URL("http://" + this.getIp() + "/cm?cmnd=Status%208");
 
         URLConnection conUsageData = usageData.openConnection();
@@ -45,12 +68,11 @@ public class Outlet extends Component {
         JSONObject data = (JSONObject) json.get("StatusSNS");
         data = (JSONObject) data.get("ENERGY");
 
-        return (data.get("Today").toString() + "kWh");
+        kWhToday = (double) data.get("Today");
+        return kWhToday;
     }
 
-    public void setKwh(String kwh) {
-        this.kwh = kwh;
-    }
+
 
     public String getIp() {
         return ip;
