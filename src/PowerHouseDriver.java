@@ -9,15 +9,25 @@ import java.util.ArrayList;
 public class PowerHouseDriver {
 
     public static void main(String[] args) throws IOException, ParseException {
-        ArrayList<String> zone1 = new ArrayList<>();
 
-        //Outlet one = new Outlet("10.0.0.156");
-        Outlet two = new Outlet("192.168.1.209");
-
+        //Outlet CarsonOne = new Outlet("10.0.0.156");
+        Outlet BenOne = new Outlet("192.168.1.209");
+        Outlet BenTwo = new Outlet("192.168.1.224");
+        Outlet Tylerben = new Outlet("192.168.1.210");
         //one.togglePower();
-        two.togglePower();
-        System.out.println(two.getkWhToday() + "kWh");
-        two.kwhLimit = 0.355;
+        //BenOne.togglePower();
+        System.out.println(BenOne.getkWhToday() + "kWh");
+        BenOne.kwhLimit = 0.355;
         //two.savePower();
+        Zone zoneOne = new Zone();
+        zoneOne.componentList.add(BenOne);
+        zoneOne.componentList.add(Tylerben);
+
+        Zone zoneTwo = new Zone();
+        zoneTwo.componentList.add(BenTwo);
+
+        //Tylerben.togglePower();
+        //BenOne.togglePower();
+        zoneOne.zoneTogglePower();
     }
 }

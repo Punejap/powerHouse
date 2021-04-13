@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="power saving feature added">
+    <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="client">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseClient/PowerHouseClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PowerHouseClient/PowerHouseClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/PowerHouseDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/PowerHouseDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Zone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/Zone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PowerHouseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PowerHouseDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +59,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PowerHouseClient">
+  <component name="RunManager" selected="Application.PowerHouseDriver">
     <configuration name="PowerHouseClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PowerHouseClient" />
       <module name="PowerHouseClient" />
@@ -78,8 +83,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PowerHouseClient" />
         <item itemvalue="Application.PowerHouseDriver" />
+        <item itemvalue="Application.PowerHouseClient" />
         <item itemvalue="Application.TasmotaTest" />
       </list>
     </recent_temporary>
@@ -135,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618340490798</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="power saving feature added">
+      <created>1618340720513</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618340720513</updated>
+    </task>
+    <task id="LOCAL-00008" summary="client">
+      <created>1618340809606</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618340809606</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,8 +173,9 @@
     <MESSAGE value="yup" />
     <MESSAGE value="first build. tasmota outlet turns on/off." />
     <MESSAGE value="first build. tasmota outlet turns on/off. added zone class/arraylist" />
-    <MESSAGE value="power saving feature added" />
     <MESSAGE value="server client" />
-    <option name="LAST_COMMIT_MESSAGE" value="server client" />
+    <MESSAGE value="power saving feature added" />
+    <MESSAGE value="client" />
+    <option name="LAST_COMMIT_MESSAGE" value="client" />
   </component>
 </project>
