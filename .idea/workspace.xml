@@ -7,30 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="power saving feature added">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PowerHouseServer_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseClient/PowerHouseClient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseClient/src/PowerHouseClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/PowerHouseServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/CreateScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/Outlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/PowerHouseServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/Scene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/Schedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/Zone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Component.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/Component.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/CreateScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/CreateScene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Outlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/Outlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/PowerHouseDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/PowerHouseDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Scene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/Scene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/Schedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Zone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/Zone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/powerHouse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/powerHouse.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PowerHouseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PowerHouseDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618265074785</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="server client">
+      <created>1618340490798</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1618340490798</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +155,7 @@
     <MESSAGE value="first build. tasmota outlet turns on/off." />
     <MESSAGE value="first build. tasmota outlet turns on/off. added zone class/arraylist" />
     <MESSAGE value="power saving feature added" />
-    <option name="LAST_COMMIT_MESSAGE" value="power saving feature added" />
+    <MESSAGE value="server client" />
+    <option name="LAST_COMMIT_MESSAGE" value="server client" />
   </component>
 </project>
