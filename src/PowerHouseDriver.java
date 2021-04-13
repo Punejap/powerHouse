@@ -20,14 +20,17 @@ public class PowerHouseDriver {
         BenOne.kwhLimit = 0.355;
         //two.savePower();
         Zone zoneOne = new Zone();
-        zoneOne.componentList.add(BenOne);
-        zoneOne.componentList.add(Tylerben);
+        zoneOne.list.add(BenOne);
+        zoneOne.list.add(Tylerben);
 
         Zone zoneTwo = new Zone();
-        zoneTwo.componentList.add(BenTwo);
+        zoneTwo.list.add(BenTwo);
+
 
         //Tylerben.togglePower();
         //BenOne.togglePower();
         zoneOne.zoneTogglePower();
+        zoneTwo.zoneTogglePower();
+        //zoneTwo.zoneTogglePower();
     }
 }
