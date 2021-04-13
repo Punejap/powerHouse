@@ -1,14 +1,14 @@
-import java.io.IOException;
+import java.util.ArrayList;
 
 //a zone groups a set of components together - living room, dining room, etc...
 //this class will include methods to quickly add various components to multiple (nested) array lists
-public class Zone extends Component{
-    public Zone(String ip) {
-        super(ip);
+public class Zone {
+    String zoneName;
+
+    public Zone(String ZoneName) {
+        zoneName = ZoneName;
     }
 
-    @Override
-    public void togglePower() throws IOException {
+    ArrayList<Component> componentList = new ArrayList<>();
 
-    }
 }
