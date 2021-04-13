@@ -15,9 +15,9 @@ public class PowerHouseDriver {
         Outlet two = new Outlet("192.168.1.209");
 
         //one.togglePower();
-        //two.togglePower();
+        two.togglePower();
         System.out.println(two.getkWhToday() + "kWh");
         two.kwhLimit = 0.355;
-        two.savePower();
+        //two.savePower();
     }
 }
