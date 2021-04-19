@@ -2,20 +2,37 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class PowerHouseServer {
+    static HashMap<String, Outlet> outletMap = new HashMap<>();
+
     public static void main(String[] args) throws IOException {
 
         ServerSocket s1 = new ServerSocket(4999);
         Socket ss = s1.accept();
         Scanner sc = new Scanner(ss.getInputStream());
-        Outlet one = new Outlet(sc.next());
-
-        one.togglePower();
-
         PrintStream p = new PrintStream(ss.getOutputStream());
-        p.println("I toggled power");
+        String temp;
+        RootCommand root = new RootCommand();
+
+        while(true){
+           String input = sc.nextLine();
+           String output = root.run(input.trim());
+           p.println(output);
+        }
+
+        //Outlet CarsonOne = new Outlet("10.0.0.156");
+        //Outlet BenOne = new Outlet("192.168.1.209");
+        //Outlet BenTwo = new Outlet("192.168.1.224");
+        //Outlet Tylerben = new Outlet("192.168.1.210");
+
+
+
+
+
 
     }
 }

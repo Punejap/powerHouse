@@ -35,6 +35,12 @@ public class Outlet extends Component {
         conToggle.getInputStream();
     }
 
+    public void powerOn() throws IOException{
+        URL powerToggle = new URL("http://" + this.getIp() + "/cm?cmnd=Power%20ON");
+        URLConnection conToggle = powerToggle.openConnection();
+        conToggle.getInputStream();
+    }
+
     public void savePower() throws IOException {
         if(kWhToday > kwhLimit) {
             this.powerOff();
