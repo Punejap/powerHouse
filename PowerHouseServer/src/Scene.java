@@ -5,7 +5,7 @@
 public class Scene extends Schedule {
 
     @Override
-    public void executeScene(){
+    public void createSettings(){
 
     }
 

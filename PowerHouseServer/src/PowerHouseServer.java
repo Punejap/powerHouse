@@ -8,31 +8,34 @@ import java.util.Scanner;
 
 public class PowerHouseServer {
     static HashMap<String, Outlet> outletMap = new HashMap<>();
+    static HashMap<String, ArrayList<Outlet>> zoneMap = new HashMap<>();
 
-    public static void main(String[] args) throws IOException {
 
-        ServerSocket s1 = new ServerSocket(4999);
-        Socket ss = s1.accept();
-        Scanner sc = new Scanner(ss.getInputStream());
-        PrintStream p = new PrintStream(ss.getOutputStream());
-        String temp;
-        RootCommand root = new RootCommand();
+    static void startServer(){
+        try {
+            ServerSocket s1 = new ServerSocket(4999);
+            Socket ss = s1.accept();
+            Scanner sc = new Scanner(ss.getInputStream());
+            PrintStream p = new PrintStream(ss.getOutputStream());
+            String temp;
+            RootCommand root = new RootCommand();
 
-        while(true){
-           String input = sc.nextLine();
-           String output = root.run(input.trim());
-           p.println(output);
+            while (true) {
+                String input = sc.nextLine();
+                String output = root.run(input.trim());
+                p.println(output);
+            }
         }
+        catch (Exception e) {
+            startServer();
+        }
+    }
 
+    public static void main(String[] args){
+        startServer();
         //Outlet CarsonOne = new Outlet("10.0.0.156");
         //Outlet BenOne = new Outlet("192.168.1.209");
         //Outlet BenTwo = new Outlet("192.168.1.224");
         //Outlet Tylerben = new Outlet("192.168.1.210");
-
-
-
-
-
-
     }
 }

@@ -14,7 +14,6 @@ public class PowerHouseClient {
         InputStreamReader sc1 = new InputStreamReader(s.getInputStream());
         BufferedReader read = new BufferedReader(sc1);
 
-
         while(true){
             command = sc.nextLine();
             PrintStream p = new PrintStream(s.getOutputStream());
@@ -22,24 +21,6 @@ public class PowerHouseClient {
             temp = read.readLine();
             System.out.println(temp);
         }
-
-        /*
-        while (true) {
-            System.out.println("sup?");
-            command = "";
-            command = sc.next();
-            System.out.println(command);
-            PrintStream p = new PrintStream(s.getOutputStream());
-            p.println(command);
-            temp = read.readLine();
-            System.out.println(temp);
-            command = sc.nextLine();
-            if(sc.next() == "stop")
-                break;
-        }
-        */
-
-
 
     }
 }

@@ -22,14 +22,20 @@ public class Outlet extends Component {
     public void togglePower() throws IOException {
         //method to toggle power
 
-        URL powerToggle = new URL("http://" + this.getIp() + "/cm?cmnd=Power%20TOGGLE");
-        URLConnection conToggle = powerToggle.openConnection();
+        URL con = new URL("http://" + this.getIp() + "/cm?cmnd=Power%20TOGGLE");
+        URLConnection conToggle = con.openConnection();
+        conToggle.getInputStream();
+    }
+
+    public void powerOn() throws IOException{
+        URL con = new URL("http://" + this.getIp() + "/cm?cmnd=Power%20On");
+        URLConnection conToggle = con.openConnection();
         conToggle.getInputStream();
     }
 
     public void powerOff() throws IOException{
-        URL powerToggle = new URL("http://" + this.getIp() + "/cm?cmnd=Power%20off");
-        URLConnection conToggle = powerToggle.openConnection();
+        URL con = new URL("http://" + this.getIp() + "/cm?cmnd=Power%20off");
+        URLConnection conToggle = con.openConnection();
         conToggle.getInputStream();
     }
 
