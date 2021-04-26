@@ -27,12 +27,27 @@ public class Outlet extends Component {
         URL powerToggle = new URL("http://" + this.getIp() + "/cm?cmnd=Power%20TOGGLE");
         URLConnection conToggle = powerToggle.openConnection();
         conToggle.getInputStream();
+
     }
 
     public void powerOff() throws IOException{
         URL powerToggle = new URL("http://" + this.getIp() + "/cm?cmnd=Power%20off");
         URLConnection conToggle = powerToggle.openConnection();
         conToggle.getInputStream();
+
+    }
+
+
+    public void setkWhToday(double kWhToday) {
+        this.kWhToday = kWhToday;
+    }
+
+    public double getKwhLimit() {
+        return kwhLimit;
+    }
+
+    public void setKwhLimit(double kwhLimit) {
+        this.kwhLimit = kwhLimit;
     }
 
     public void powerOn() throws IOException{
@@ -63,17 +78,7 @@ public class Outlet extends Component {
         return kWhToday;
     }
 
-    public void setkWhToday(double kWhToday) {
-        this.kWhToday = kWhToday;
-    }
 
-    public double getKwhLimit() {
-        return kwhLimit;
-    }
-
-    public void setKwhLimit(double kwhLimit) {
-        this.kwhLimit = kwhLimit;
-    }
 
     public String getIp() {
         return ip;

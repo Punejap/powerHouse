@@ -1,7 +1,7 @@
 import java.io.IOException;
 
-public class ToggleOutletCommand extends Command{
 
+public class ToggleOutletCommand extends Command{
     public ToggleOutletCommand() {
         super("toggle");
     }

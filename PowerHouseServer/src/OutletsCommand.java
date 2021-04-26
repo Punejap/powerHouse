@@ -5,7 +5,6 @@ public class OutletsCommand extends Command{
         children.add(new PowerOnOutletCommand());
         children.add(new PowerOffOutletCommand());
         children.add(new NewOutletCommand());
-        //children.add(new MonitoringDataCommand);
         //children.add(new Status);
     }
 

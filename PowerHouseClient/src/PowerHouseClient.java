@@ -10,7 +10,7 @@ public class PowerHouseClient {
     public static void main(String[] args) throws IOException {
         String command, temp;
         Scanner sc = new Scanner(System.in);
-        Socket s = new Socket("192.168.1.175", 4999);
+        Socket s = new Socket("10.0.0.28", 4999);
         InputStreamReader sc1 = new InputStreamReader(s.getInputStream());
         BufferedReader read = new BufferedReader(sc1);
 
@@ -21,6 +21,7 @@ public class PowerHouseClient {
             temp = read.readLine();
             System.out.println(temp);
         }
+
 
     }
 }

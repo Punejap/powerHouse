@@ -3,10 +3,15 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.text.DateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.time.Duration;
 
 //this class defines methods and fields for outlet components.
 public class Outlet extends Component {
@@ -46,7 +51,7 @@ public class Outlet extends Component {
         }
     }
 
-    public double getkWhToday() throws IOException, ParseException {
+    public String getDataUsage(String key) throws IOException, ParseException {
         URL usageData = new URL("http://" + this.getIp() + "/cm?cmnd=Status%208");
 
         URLConnection conUsageData = usageData.openConnection();
@@ -56,9 +61,15 @@ public class Outlet extends Component {
 
         JSONObject data = (JSONObject) json.get("StatusSNS");
         data = (JSONObject) data.get("ENERGY");
+        return String.valueOf(data.get(key));
+    }
 
-        kWhToday = (double) data.get("Today");
-        return kWhToday;
+    public double getAvgDailykWh() throws IOException, ParseException {
+        double avgDailykWh;
+        LocalDateTime startTime = LocalDateTime.parse(getDataUsage("TotalStartTime").toString());
+        Duration duration = Duration.between(startTime, LocalDateTime.now());
+        System.out.println(duration.toDays());
+        return duration.toHours();
     }
 
     public void setkWhToday(double kWhToday) {

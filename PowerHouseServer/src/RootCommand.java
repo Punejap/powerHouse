@@ -4,6 +4,7 @@ public class RootCommand extends Command{
         super("");
         children.add(new OutletsCommand());
         children.add(new ZoneCommand());
+        children.add(new PowerConsumptionCommand());
 
     }
 

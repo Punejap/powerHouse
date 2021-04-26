@@ -1,3 +1,6 @@
+import org.json.simple.parser.ParseException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -11,7 +14,7 @@ public abstract class Command implements Runnable {
 
     public abstract String helpMessage();
 
-    public String run(String cmdInput) {
+    public String run(String cmdInput) throws IOException, ParseException {
         //chop off first part of string, save into variable
         int index = cmdInput.indexOf(" ");
         if(index == -1){

@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class PowerHouseDriver {
 
-    public static void createSettings() throws IOException, ParseException {
+    public static void createSettings() throws IOException {
 
 
         JSONObject obj = new JSONObject();
