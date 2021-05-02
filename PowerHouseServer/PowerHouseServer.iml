@@ -7,7 +7,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="powerHouse" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -17,6 +16,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="json-simple-1.1" level="project" />
+    <orderEntry type="library" name="json-simple-1.1.1" level="project" />
+    <orderEntry type="module" module-name="PowerHouseDriver" />
   </component>
 </module>

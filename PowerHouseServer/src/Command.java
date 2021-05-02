@@ -32,7 +32,7 @@ public abstract class Command implements Runnable {
                 return command.run(restOf);
             }
         }
-        return "command call issue \n" + helpMessage();
+        return "command call issue " + helpMessage();
     }
 
     public String getName() {

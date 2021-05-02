@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/PowerHouseClient/PowerHouseClient.iml" filepath="$PROJECT_DIR$/PowerHouseClient/PowerHouseClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/PowerHouseDriver/PowerHouseDriver.iml" filepath="$PROJECT_DIR$/PowerHouseDriver/PowerHouseDriver.iml" />
       <module fileurl="file://$PROJECT_DIR$/PowerHouseServer/PowerHouseServer.iml" filepath="$PROJECT_DIR$/PowerHouseServer/PowerHouseServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/powerHouse.iml" filepath="$PROJECT_DIR$/powerHouse.iml" />
     </modules>
   </component>
 </project>

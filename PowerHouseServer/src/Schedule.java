@@ -10,32 +10,67 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class Schedule implements Settable {
-    String ip;
+public class Schedule{
+
+    public int timer;
+    public String time, days, repeat, action;
+
+    public Schedule(int timer, String time, String days, String repeat, String action) {
+        this.timer = timer;
+        this.time = time;
+        this.days = days;
+        this.repeat = repeat;
+        this.action = action;
+    }
+
     //schedules could be considered scenes, but a scene contains much more info
-    @Override
-    public void createSettings() throws IOException {
-        URL con = new URL("http://" + this.ip + "/cs?");
-        URLConnection Jcon = con.openConnection();
-        OutputStreamWriter op = new OutputStreamWriter(Jcon.getOutputStream());
+    public String createSettings(){
         JSONObject obj = new JSONObject();
-        obj.put("Enable", 1);
-        obj.put("Time", "02:23");
-        obj.put("window", 0);
-        obj.put("days", "1111111");
-        obj.put("Repeat", 0);
-        obj.put("Output", 1);
-        obj.put("Action", 1);
-        op.write("Timer1" + obj);
+        obj.put("Time", this.getTime());
+        obj.put("Days",this.getDays());
+        obj.put("Repeat", this.getRepeat());
+        obj.put("Action", this.getAction());
+
+        return obj.toString();
     }
 
-
-
-    public String getIp() {
-        return ip;
+    public int getTimer() {
+        return timer;
     }
 
-    public void setIp(String ip) {
-        this.ip = ip;
+    public void setTimer(int timer) {
+        this.timer = timer;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getDays() {
+        return days;
+    }
+
+    public void setDays(String days) {
+        this.days = days;
+    }
+
+    public String getRepeat() {
+        return repeat;
+    }
+
+    public void setRepeat(String repeat) {
+        this.repeat = repeat;
+    }
+
+    public String getAction() {
+        return action;
+    }
+
+    public void setAction(String action) {
+        this.action = action;
     }
 }

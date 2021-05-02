@@ -7,53 +7,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="power saving feature added">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseDriver/PowerHouseDriver.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/PowerConsumptionCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/UsageAverageCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/UsageTodayCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/UsageTotalCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/CreateScheduleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/OutletScheduleToggleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/OutletSchedulingCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/ScheduleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/ZoneScheduleToggleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/ZoneSchedulingCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/PowerHouseServer_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PowerHouseServer_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2021_5_18_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_12_2021_5_18_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PowerHouseClient/PowerHouseClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseClient/PowerHouseClient.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseClient/src/PowerHouseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseClient/src/PowerHouseClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PowerHouseDriver/PowerHouseDriver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/PowerHouseDriver.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PowerHouseDriver/src/PowerHouseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/src/PowerHouseDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/PowerHouseServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/PowerHouseServer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/Outlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/Outlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/OutletsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/OutletsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/PowerHouseServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/PowerHouseServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/RootCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/RootCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/Runnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/Runnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/Scene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/Schedule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ToggleOutletCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ToggleOutletCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PowerHouseServer_jar/PowerHouseServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PowerHouseServer_jar/PowerHouseServer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseClient/PowerHouseClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PowerHouseClient/PowerHouseClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PowerHouseServer/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/CreateScene.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Outlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PowerHouseServer/Outlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/OutletsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PowerHouseServer/OutletsCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/RootCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PowerHouseServer/RootCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Runnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PowerHouseServer/Runnable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Scene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PowerHouseServer/Scene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PowerHouseServer/Schedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/ZoneCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PowerHouseServer/ZoneCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Outlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/Outlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/PowerHouseDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/powerHouse/PowerHouseDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/powerHouse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/powerHouse.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/src/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component_structure.puml" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/src/Component_structure.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/src/CreateScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateScene_structure.puml" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/src/CreateScene_structure.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Outlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/src/Outlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PowerHouseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/src/PowerHouseDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/src/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/src/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Schedule_structure.puml" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/src/Schedule_structure.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseDriver/src/Zone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PowerHouseServer_jar/PowerHouseServer.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseClient/PowerHouseClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/AddToZoneCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Component.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/NewOutletCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/NewZoneCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Outlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/OutletsCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/PowerHouseServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/PowerOffOutletCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/PowerOffZoneCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/PowerOnOutletCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/PowerOnZoneCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/RootCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Runnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Scene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Schedule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/ToggleOutletCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/ToggleZoneCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/Zone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PowerHouseServer/ZoneCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Component.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Component_structure.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/CreateScene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/CreateScene_structure.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Outlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/PowerHouseDriver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Scene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Schedule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Schedule_structure.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/powerHouse/Zone.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,10 +97,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PowerHouseServer" />
+    <property name="last_opened_file_path" value="E:/Java Exports" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.17152661" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -112,8 +120,10 @@
       </method>
     </configuration>
     <configuration name="PowerHouseDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="PowerHouseDriver" />
-      <module name="powerHouse" />
+      <module name="PowerHouseDriver" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

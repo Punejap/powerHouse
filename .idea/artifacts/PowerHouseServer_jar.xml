@@ -1,13 +1,10 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="PowerHouseServer:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/PowerHouseServer_jar</output-path>
+    <output-path>E:/Java Exports</output-path>
     <root id="archive" name="PowerHouseServer.jar">
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/PowerHouseServer/META-INF/MANIFEST.MF" />
-      </element>
       <element id="module-output" name="PowerHouseServer" />
-      <element id="module-output" name="powerHouse" />
-      <element id="extracted-dir" path="$USER_HOME$/Downloads/json-simple-1.1.jar/json-simple-1.1.jar" path-in-jar="/" />
+      <element id="module-output" name="PowerHouseDriver" />
+      <element id="extracted-dir" path="E:/Documents/Java stuff/json-simple-1.1.1.jar/json-simple-1.1.1.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

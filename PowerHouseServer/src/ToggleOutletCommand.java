@@ -8,7 +8,7 @@ public class ToggleOutletCommand extends Command{
 
     @Override
     public String helpMessage() {
-        return null;
+        return "toggle outlet command issue";
     }
 
     @Override
