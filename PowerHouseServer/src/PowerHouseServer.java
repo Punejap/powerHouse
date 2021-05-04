@@ -19,11 +19,12 @@ public class PowerHouseServer {
             Socket ss = s1.accept();
             Scanner sc = new Scanner(ss.getInputStream());
             PrintStream p = new PrintStream(ss.getOutputStream());
-            String temp;
             RootCommand root = new RootCommand();
+
 
             while (true) {
                 String input = sc.nextLine();
+                System.out.println(input);
                 String output = root.run(input.trim());
                 p.println(output);
             }

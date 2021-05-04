@@ -72,6 +72,11 @@ public class Outlet extends Component {
         return duration.toHours();
     }
 
+    @Override
+    public String toString(){
+        return "\""+this.ip+"\"";
+    }
+
     public void setkWhToday(double kWhToday) {
         this.kWhToday = kWhToday;
     }

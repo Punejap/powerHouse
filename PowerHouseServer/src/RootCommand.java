@@ -6,7 +6,6 @@ public class RootCommand extends Command{
         children.add(new ZoneCommand());
         children.add(new PowerConsumptionCommand());
         children.add(new ScheduleCommand());
-
     }
 
     @Override

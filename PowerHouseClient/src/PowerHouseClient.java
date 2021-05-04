@@ -13,10 +13,15 @@ public class PowerHouseClient {
         Socket s = new Socket("192.168.1.175", 4999);
         InputStreamReader sc1 = new InputStreamReader(s.getInputStream());
         BufferedReader read = new BufferedReader(sc1);
+        PrintStream p = new PrintStream(s.getOutputStream());
+/*
+        PrintStream start = new PrintStream(s.getOutputStream());
+
+        System.out.println(temp);
+*/
 
         while(true){
             command = sc.nextLine();
-            PrintStream p = new PrintStream(s.getOutputStream());
             p.println(command);
             temp = read.readLine();
             System.out.println(temp);

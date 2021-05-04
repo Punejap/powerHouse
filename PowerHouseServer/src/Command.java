@@ -28,7 +28,10 @@ public abstract class Command implements Runnable {
             if (command.name.equals(firstWord)) {
                 //get rest of command string minus first word
                 //pass to command's run method
-                String restOf = cmdInput.substring(index + 1, cmdInput.length());
+                String restOf = null;
+                if(index <cmdInput.length()){
+                    restOf = cmdInput.substring(index + 1, cmdInput.length());
+                }
                 return command.run(restOf);
             }
         }
