@@ -7,16 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="zone, schedule list return added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/CreateScheduleCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ListOutletCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ListOutletsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/NewScheduleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/NewScheduleCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/OutletSchedulingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/OutletSchedulingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/OutletsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/OutletsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/PowerHouseServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/PowerHouseServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ScheduleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ScheduleCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ScheduleListCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ListSchedules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ZoneSchedulingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ZoneSchedulingCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/Schedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620329137807</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="zone, schedule list return added">
+      <created>1620332975925</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620332975925</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

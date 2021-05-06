@@ -20,7 +20,7 @@ public class ListSchedules extends Command{
             for (Map.Entry<Integer, Schedule> entry : PowerHouseServer.scheduleMap.entrySet())
                 map.put(entry.getKey(), entry.getValue().createSettings());
 
-            return JSONObject.toJSONString(map);
+            return map.toString();
         }
         catch(Exception e){
             return "failed to list";

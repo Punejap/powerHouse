@@ -6,10 +6,8 @@ import java.util.Scanner;
 
 public class PowerHouseServer {
     static HashMap<String, Outlet> outletMap = new HashMap<>();
-    static HashMap<String, HashMap<String, Outlet>> zoneMap =
-            new HashMap<>();
+    static HashMap<String, HashMap<String, Outlet>> zoneMap = new HashMap<>();
     static HashMap<Integer, Schedule> scheduleMap = new HashMap<>();
-
 
     static void startServer(){
         try {
@@ -18,7 +16,6 @@ public class PowerHouseServer {
             Scanner sc = new Scanner(ss.getInputStream());
             PrintStream p = new PrintStream(ss.getOutputStream());
             RootCommand root = new RootCommand();
-
 
             while (true) {
                 String input = sc.nextLine();
