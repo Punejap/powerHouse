@@ -1,6 +1,5 @@
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,7 +20,7 @@ public class ZoneSchedulingCommand extends Command{
         int timer = Integer.parseInt(cmdInput.substring(index + 1));
 
         try {
-            String info = PowerHouseServer.scheduleList.get(timer - 1).createSettings();
+            String info = PowerHouseServer.scheduleMap.get(timer).createSettings();
 
                 for(Map.Entry<String, Outlet> entry : map.entrySet()){
                Outlet outlet = entry.getValue();
@@ -32,6 +31,6 @@ public class ZoneSchedulingCommand extends Command{
             }
             return "schedule added to zone";
         }
-        catch (Exception e){return "failed";}
+        catch (Exception e){return helpMessage();}
     }
 }

@@ -1,9 +1,6 @@
-import java.io.IOException;
 import java.io.PrintStream;
-import java.lang.reflect.Array;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -11,7 +8,7 @@ public class PowerHouseServer {
     static HashMap<String, Outlet> outletMap = new HashMap<>();
     static HashMap<String, HashMap<String, Outlet>> zoneMap =
             new HashMap<>();
-    static ArrayList<Schedule> scheduleList = new ArrayList<>();
+    static HashMap<Integer, Schedule> scheduleMap = new HashMap<>();
 
 
     static void startServer(){

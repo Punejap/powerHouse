@@ -1,7 +1,7 @@
 import org.json.simple.JSONObject;
 
-public class ListOutletCommand extends Command{
-    public ListOutletCommand() {
+public class ListOutletsCommand extends Command{
+    public ListOutletsCommand() {
         super("list");
     }
 

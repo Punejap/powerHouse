@@ -5,7 +5,7 @@ public class OutletsCommand extends Command{
         children.add(new PowerOnOutletCommand());
         children.add(new PowerOffOutletCommand());
         children.add(new NewOutletCommand());
-        children.add(new ListOutletCommand());
+        children.add(new ListOutletsCommand());
     }
 
     @Override

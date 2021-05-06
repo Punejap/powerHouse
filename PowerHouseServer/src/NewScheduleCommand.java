@@ -1,8 +1,3 @@
-import org.json.simple.parser.ParseException;
-
-import java.io.IOException;
-import java.util.ArrayList;
-
 public class NewScheduleCommand extends Command{
 
     public NewScheduleCommand() {
@@ -11,7 +6,7 @@ public class NewScheduleCommand extends Command{
 
     @Override
     public String helpMessage() {
-        return "create Schedule Command class issue";
+        return "new Schedule Command class issue";
     }
 
     @Override
@@ -22,11 +17,12 @@ public class NewScheduleCommand extends Command{
 
         try {
             timer = Integer.parseInt(scheduleParams.substring(0, 1));
-            time = scheduleParams.substring(1, 6);
+            time = scheduleParams.substring(1, 6).trim();
             days = scheduleParams.substring(6, 13);
             repeat = scheduleParams.substring(13, 14);
             action = scheduleParams.substring(14);
-            PowerHouseServer.scheduleList.add(new Schedule(timer, time, days, repeat, action));
+            Schedule schedule = new Schedule(timer, time, days, repeat, action);
+            PowerHouseServer.scheduleMap.put(timer,  schedule);
             return "schedule created";
         }
         catch(Exception e){return helpMessage();}

@@ -6,7 +6,7 @@ public class ScheduleCommand extends Command{
        children.add(new OutletScheduleToggleCommand());
        children.add(new ZoneSchedulingCommand());
        children.add(new ZoneScheduleToggleCommand());
-       children.add(new ScheduleListCommand());
+       children.add(new ListSchedules());
     }
 
     @Override

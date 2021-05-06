@@ -1,7 +1,5 @@
-import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.Arrays;
 
 public class OutletSchedulingCommand extends Command{
     public OutletSchedulingCommand() {
@@ -22,7 +20,7 @@ public class OutletSchedulingCommand extends Command{
             int timer = Integer.parseInt(cmdInput.substring(index + 1));
 
             try {
-                String info = PowerHouseServer.scheduleList.get(timer - 1).createSettings();
+                String info = PowerHouseServer.scheduleMap.get(timer).createSettings();
                 URL con = new URL("http://" + outlet.getIp() + "/cm?cmnd=Timer" + timer + info);
                 URLConnection jcon = con.openConnection();
                 jcon.getInputStream();
