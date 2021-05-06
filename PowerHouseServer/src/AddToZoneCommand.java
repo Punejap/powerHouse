@@ -16,7 +16,12 @@ public class AddToZoneCommand extends Command{
         int index = deviceInfo.lastIndexOf(" ");
         String zoneName = deviceInfo.substring(0, index);
         String outletName = deviceInfo.substring(index+1, cmdInput.length());
-        PowerHouseServer.zoneMap.get(zoneName).add(PowerHouseServer.outletMap.get(outletName));
-        return outletName + " added to zone " + zoneName;
+
+           if (PowerHouseServer.outletMap.containsKey(outletName)) {
+                PowerHouseServer.zoneMap.get(zoneName).put(outletName, PowerHouseServer.outletMap.get(outletName));
+                return outletName + " added to zone " + zoneName;
+            }
+           else
+        {return "failed to add to zone";}
     }
 }

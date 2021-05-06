@@ -9,8 +9,9 @@ import java.util.Scanner;
 
 public class PowerHouseServer {
     static HashMap<String, Outlet> outletMap = new HashMap<>();
-    static HashMap<String, ArrayList<Outlet>> zoneMap = new HashMap<>();
-    static Schedule[] scheduleList = new Schedule[9];
+    static HashMap<String, HashMap<String, Outlet>> zoneMap =
+            new HashMap<>();
+    static ArrayList<Schedule> scheduleList = new ArrayList<>();
 
 
     static void startServer(){
@@ -24,7 +25,6 @@ public class PowerHouseServer {
 
             while (true) {
                 String input = sc.nextLine();
-                System.out.println(input);
                 String output = root.run(input.trim());
                 p.println(output);
             }

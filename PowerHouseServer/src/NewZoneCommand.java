@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class NewZoneCommand extends Command{
     public NewZoneCommand() {
@@ -13,8 +14,8 @@ public class NewZoneCommand extends Command{
     @Override
     public String run(String cmdInput){
         String name= cmdInput.trim();
-        ArrayList<Outlet> arraylist = new ArrayList<>();
-        PowerHouseServer.zoneMap.put(name, arraylist);
+        HashMap<String, Outlet> map = new HashMap<>();
+        PowerHouseServer.zoneMap.put(name,map);
         return "zone " + name + " created";
     }
 

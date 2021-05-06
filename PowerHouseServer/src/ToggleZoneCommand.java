@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ToggleZoneCommand extends Command{
     public ToggleZoneCommand() {
@@ -15,12 +17,12 @@ public class ToggleZoneCommand extends Command{
         //add validation
         String name = cmdInput.trim();
         //look at server outlets hashmap, find outlet with matching name
-        ArrayList<Outlet> arrayList = PowerHouseServer.zoneMap.get(name);
+        HashMap<String, Outlet> map = PowerHouseServer.zoneMap.get(name);
         try{
-            for(int i = 0; i < arrayList.size(); i++){
-                arrayList.get(i).togglePower();
+           for(Map.Entry<String, Outlet> entry : map.entrySet())
+               entry.getValue().togglePower();
             }
-        }
+
         catch(Exception e){
             return "failed to toggle";
         }

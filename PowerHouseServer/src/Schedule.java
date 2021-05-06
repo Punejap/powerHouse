@@ -31,7 +31,7 @@ public class Schedule{
         obj.put("Repeat", this.getRepeat());
         obj.put("Action", this.getAction());
 
-        return obj.toString();
+        return JSONObject.toJSONString(obj);
     }
 
     public int getTimer() {

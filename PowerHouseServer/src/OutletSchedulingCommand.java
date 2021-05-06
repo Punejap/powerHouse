@@ -22,12 +22,12 @@ public class OutletSchedulingCommand extends Command{
             int timer = Integer.parseInt(cmdInput.substring(index + 1));
 
             try {
-                String info = PowerHouseServer.scheduleList[timer].createSettings();
+                String info = PowerHouseServer.scheduleList.get(timer - 1).createSettings();
                 URL con = new URL("http://" + outlet.getIp() + "/cm?cmnd=Timer" + timer + info);
                 URLConnection jcon = con.openConnection();
                 jcon.getInputStream();
                 return "schedule added to outlet";
             }
-            catch (Exception e){return "failed";}
+            catch (Exception e){return helpMessage();}
         }
 }

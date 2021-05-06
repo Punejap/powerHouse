@@ -7,7 +7,7 @@ public class ZoneCommand extends Command{
         children.add(new PowerOffZoneCommand());
         children.add(new NewZoneCommand());
         children.add(new AddToZoneCommand());
-        //children.add(new MonitoringDataCommand);
+        children.add(new ListZonesCommand());
         //children.add(new Status);
     }
 

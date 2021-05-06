@@ -13,5 +13,6 @@ public class ListOutletCommand extends Command{
     @Override
     public String run(String cmdInput){
         return JSONObject.toJSONString(PowerHouseServer.outletMap);
+
     }
 }

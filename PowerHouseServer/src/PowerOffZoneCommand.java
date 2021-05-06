@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class PowerOffZoneCommand extends Command{
     public PowerOffZoneCommand() {
@@ -15,14 +17,13 @@ public class PowerOffZoneCommand extends Command{
         //add validation
         String name = cmdInput.trim();
         //look at server outlets hashmap, find outlet with matching name
-        ArrayList<Outlet> arrayList = PowerHouseServer.zoneMap.get(name);
+        HashMap<String, Outlet> map = PowerHouseServer.zoneMap.get(name);
         try{
-            for(int i = 0; i < arrayList.size(); i++){
-                arrayList.get(i).powerOff();
-            }
+            for(Map.Entry<String, Outlet> entry : map.entrySet())
+                entry.getValue().powerOff();
         }
         catch(Exception e){
-            return "failed to toggle";
+            return "failed to power off";
         }
         return "i just turned off zone " + name;
     }
