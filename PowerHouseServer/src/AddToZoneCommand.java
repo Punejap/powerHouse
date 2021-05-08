@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-
-public class AddToZoneCommand extends Command{
+public class AddToZoneCommand extends Command {
     public AddToZoneCommand() {
         super("add");
     }

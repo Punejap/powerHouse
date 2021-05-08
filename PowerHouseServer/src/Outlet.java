@@ -25,8 +25,6 @@ public class Outlet extends Component {
 
     @Override
     public void togglePower() throws IOException {
-        //method to toggle power
-
         URL con = new URL("http://" + this.getIp() + "/cm?cmnd=Power%20TOGGLE");
         URLConnection conToggle = con.openConnection();
         conToggle.getInputStream();

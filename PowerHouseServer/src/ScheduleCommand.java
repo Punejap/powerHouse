@@ -1,4 +1,4 @@
-public class ScheduleCommand extends Command{
+public class ScheduleCommand extends Command {
     public ScheduleCommand() {
         super("schedule");
         children.add(new NewScheduleCommand());
@@ -6,7 +6,7 @@ public class ScheduleCommand extends Command{
        children.add(new OutletScheduleToggleCommand());
        children.add(new ZoneSchedulingCommand());
        children.add(new ZoneScheduleToggleCommand());
-       children.add(new ListSchedules());
+       children.add(new ListSchedulesCommand());
     }
 
     @Override

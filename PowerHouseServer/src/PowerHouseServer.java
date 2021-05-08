@@ -10,6 +10,7 @@ public class PowerHouseServer {
     static HashMap<Integer, Schedule> scheduleMap = new HashMap<>();
 
     static void startServer(){
+
         try {
             ServerSocket s1 = new ServerSocket(4999);
             Socket ss = s1.accept();
@@ -28,8 +29,19 @@ public class PowerHouseServer {
         }
     }
 
+    static void configure(){
+        try{
+            ConfigReader configReader = new ConfigReader();
+            configReader.readFile();
+        }catch(Exception e){
+            System.out.println("didnt work");
+        }
+    }
+
     public static void main(String[] args){
+        configure();
         startServer();
+
         //Outlet CarsonOne = new Outlet("10.0.0.156");
         //Outlet BenOne = new Outlet("192.168.1.209");
         //Outlet BenTwo = new Outlet("192.168.1.224");

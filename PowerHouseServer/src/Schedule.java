@@ -30,8 +30,7 @@ public class Schedule{
         obj.put("Days",this.getDays());
         obj.put("Repeat", this.getRepeat());
         obj.put("Action", this.getAction());
-
-        System.out.println(obj + "\n" + JSONObject.toJSONString(obj) );
+        
         return JSONObject.toJSONString(obj);
     }
 

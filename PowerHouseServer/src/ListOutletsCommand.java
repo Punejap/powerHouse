@@ -1,13 +1,13 @@
 import org.json.simple.JSONObject;
 
-public class ListOutletsCommand extends Command{
+public class ListOutletsCommand extends Command {
     public ListOutletsCommand() {
         super("list");
     }
 
     @Override
     public String helpMessage() {
-        return "start command class issue";
+        return "outlets list class issue";
     }
 
     @Override

@@ -3,7 +3,7 @@ import java.net.URLConnection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ZoneSchedulingCommand extends Command{
+public class ZoneSchedulingCommand extends Command {
     public ZoneSchedulingCommand() {
         super("zone");
     }

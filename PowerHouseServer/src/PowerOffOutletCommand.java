@@ -1,4 +1,6 @@
-public class PowerOffOutletCommand extends Command{
+
+
+public class PowerOffOutletCommand extends Command {
 
     public PowerOffOutletCommand() {
         super("off");
@@ -6,7 +8,7 @@ public class PowerOffOutletCommand extends Command{
 
     @Override
     public String helpMessage() {
-        return null;
+        return "power off outlet command class issue";
     }
 
     @Override
@@ -19,7 +21,7 @@ public class PowerOffOutletCommand extends Command{
             outlet.powerOff();
         }
         catch(Exception e){
-            return "failed to turn off";
+            return helpMessage();
         }
         return "i just turned off " + name;
     }

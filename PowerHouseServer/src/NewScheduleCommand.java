@@ -1,4 +1,4 @@
-public class NewScheduleCommand extends Command{
+public class NewScheduleCommand extends Command {
 
     public NewScheduleCommand() {
         super("new");

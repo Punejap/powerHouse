@@ -1,8 +1,6 @@
 import org.json.simple.JSONObject;
 
-import java.util.ArrayList;
-
-public class ListZonesCommand extends Command{
+public class ListZonesCommand extends Command {
 
     public ListZonesCommand() {
         super("list");
@@ -14,10 +12,6 @@ public class ListZonesCommand extends Command{
     }
 
     public String run(String cmdInput) {
-
-        //look at server outlets hashmap, find outlet with matching name
-
-
         return JSONObject.toJSONString(PowerHouseServer.zoneMap);
     }
 

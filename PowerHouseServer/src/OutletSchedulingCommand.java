@@ -1,7 +1,7 @@
 import java.net.URL;
 import java.net.URLConnection;
 
-public class OutletSchedulingCommand extends Command{
+public class OutletSchedulingCommand extends Command {
     public OutletSchedulingCommand() {
         super("outlet");
     }

@@ -2,7 +2,7 @@ import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 
-public class UsageTotalCommand extends Command{
+public class UsageTotalCommand extends Command {
 
     public UsageTotalCommand() {
         super("total");
@@ -18,12 +18,12 @@ public class UsageTotalCommand extends Command{
             return outlet.getDataUsage("Total");
         }
         catch(Exception e){
-            return "failed to get usage";
+            return helpMessage();
         }
     }
 
     @Override
     public String helpMessage() {
-        return null;
+        return "failed to get usage";
     }
 }

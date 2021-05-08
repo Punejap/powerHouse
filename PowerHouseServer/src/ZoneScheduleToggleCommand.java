@@ -1,10 +1,9 @@
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ZoneScheduleToggleCommand extends Command{
+public class ZoneScheduleToggleCommand extends Command {
     public ZoneScheduleToggleCommand() {
         super("zonetoggle");
     }

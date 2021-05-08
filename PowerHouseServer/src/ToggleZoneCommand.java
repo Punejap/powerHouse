@@ -1,8 +1,7 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ToggleZoneCommand extends Command{
+public class ToggleZoneCommand extends Command {
     public ToggleZoneCommand() {
         super("toggle");
     }

@@ -1,4 +1,4 @@
-public class ZoneCommand extends Command{
+public class ZoneCommand extends Command {
 
     public ZoneCommand() {
         super("zone");

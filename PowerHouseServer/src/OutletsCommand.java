@@ -1,4 +1,4 @@
-public class OutletsCommand extends Command{
+public class OutletsCommand extends Command {
     public OutletsCommand() {
         super("outlets");
         children.add(new ToggleOutletCommand());

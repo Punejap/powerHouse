@@ -1,10 +1,8 @@
-import org.json.simple.JSONObject;
-
 import java.util.HashMap;
 import java.util.Map;
 
-public class ListSchedules extends Command{
-    public ListSchedules() {
+public class ListSchedulesCommand extends Command {
+    public ListSchedulesCommand() {
         super("list");
     }
 
@@ -19,13 +17,10 @@ public class ListSchedules extends Command{
         try {
             for (Map.Entry<Integer, Schedule> entry : PowerHouseServer.scheduleMap.entrySet())
                 map.put(entry.getKey(), entry.getValue().createSettings());
-
             return map.toString();
         }
         catch(Exception e){
-            return "failed to list";
+            return helpMessage();
         }
-
-
     }
 }

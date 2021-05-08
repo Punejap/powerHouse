@@ -1,3 +1,5 @@
+
+
 public class PowerOnOutletCommand extends Command
 {
     public PowerOnOutletCommand() {
@@ -6,7 +8,7 @@ public class PowerOnOutletCommand extends Command
 
     @Override
     public String helpMessage() {
-        return null;
+        return "failed ";
     }
 
     @Override
@@ -14,12 +16,13 @@ public class PowerOnOutletCommand extends Command
         //add validation
         String name = cmdInput.trim();
         //look at server outlets hashmap, find outlet with matching name
-        Outlet outlet = PowerHouseServer.outletMap.get(name);
+
         try {
+            Outlet outlet = PowerHouseServer.outletMap.get(name);
             outlet.powerOn();
         }
         catch(Exception e){
-            return "failed to turn on";
+            return helpMessage();
         }
         return "i just turned on " + name;
     }

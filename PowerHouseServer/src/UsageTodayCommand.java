@@ -2,7 +2,7 @@ import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 
-public class UsageTodayCommand extends Command{
+public class UsageTodayCommand extends Command {
 
     public UsageTodayCommand() {
         super("today");
@@ -18,12 +18,12 @@ public class UsageTodayCommand extends Command{
             return String.valueOf(outlet.getDataUsage("Today"));
         }
         catch(Exception e){
-            return "failed to get usage";
+            return helpMessage();
         }
     }
 
     @Override
     public String helpMessage() {
-        return null;
+        return "failed to get usage";
     }
 }

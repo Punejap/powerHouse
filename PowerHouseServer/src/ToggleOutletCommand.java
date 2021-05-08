@@ -1,28 +1,28 @@
-import java.io.IOException;
 
-
-public class ToggleOutletCommand extends Command{
-    public ToggleOutletCommand() {
-        super("toggle");
-    }
-
-    @Override
-    public String helpMessage() {
-        return "toggle outlet command issue";
-    }
-
-    @Override
-    public String run(String cmdInput){
-        //add validation
-        String name = cmdInput.trim();
-        //look at server outlets hashmap, find outlet with matching name
-        Outlet outlet = PowerHouseServer.outletMap.get(name);
-        try {
-            outlet.togglePower();
+    public class ToggleOutletCommand extends Command {
+        public ToggleOutletCommand() {
+            super("toggle");
         }
-        catch(Exception e){
-            return "failed to toggle";
+
+        @Override
+        public String helpMessage() {
+            return "toggle outlet command issue";
         }
-        return "i just toggled outlet " + name;
+
+        @Override
+        public String run(String cmdInput){
+            //add validation
+            String name = cmdInput.trim();
+            //look at server outlets hashmap, find outlet with matching name
+
+            try {
+                Outlet outlet = PowerHouseServer.outletMap.get(name);
+                outlet.togglePower();
+            }
+            catch(Exception e){
+                return helpMessage();
+            }
+            return "i just toggled outlet " + name;
+        }
     }
-}
+

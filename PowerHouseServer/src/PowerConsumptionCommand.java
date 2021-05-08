@@ -1,4 +1,4 @@
-public class PowerConsumptionCommand extends Command{
+public class PowerConsumptionCommand extends Command {
     public PowerConsumptionCommand() {
         super("usage");
         children.add(new UsageTodayCommand());

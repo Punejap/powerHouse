@@ -2,7 +2,6 @@ import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Locale;
 
 public abstract class Command implements Runnable {
     private String name;
@@ -35,7 +34,7 @@ public abstract class Command implements Runnable {
                 return command.run(restOf);
             }
         }
-        return "command call issue " + helpMessage();
+        return "command call issue ";
     }
 
     public String getName() {

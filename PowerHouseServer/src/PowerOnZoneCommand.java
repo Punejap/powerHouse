@@ -1,8 +1,7 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PowerOnZoneCommand extends Command{
+public class PowerOnZoneCommand extends Command {
 
 
     public PowerOnZoneCommand() {
@@ -19,14 +18,16 @@ public class PowerOnZoneCommand extends Command{
         //add validation
         String name = cmdInput.trim();
         //look at server outlets hashmap, find outlet with matching name
-        HashMap<String, Outlet> map = PowerHouseServer.zoneMap.get(name);
+
         try{
+            HashMap<String, Outlet> map = PowerHouseServer.zoneMap.get(name);
             for(Map.Entry<String, Outlet> entry : map.entrySet())
                 entry.getValue().powerOn();
         }
         catch(Exception e){
-            return "failed to power on";
+            return helpMessage();
         }
         return "i just turned on zone " + name;
     }
+
 }

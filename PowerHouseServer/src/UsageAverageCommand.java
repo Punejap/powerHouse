@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
-public class UsageAverageCommand extends Command{
+public class UsageAverageCommand extends Command {
 
     public UsageAverageCommand() {
         super("avg");
@@ -24,12 +24,12 @@ public class UsageAverageCommand extends Command{
             return ("Average of " + String.format("%.2f",(totalkwh/(runTime.toHours()/24))) + "kWh a day");
         }
         catch(Exception e){
-            return "failed to get usage";
+            return helpMessage();
         }
     }
 
     @Override
     public String helpMessage() {
-        return null;
+        return "failed to get usage";
     }
 }

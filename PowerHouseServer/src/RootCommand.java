@@ -1,4 +1,4 @@
-public class RootCommand extends Command{
+public class RootCommand extends Command {
 
     public RootCommand(){
         super("");
