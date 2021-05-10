@@ -1,15 +1,17 @@
-
-
+/**
+ * used to create outlet objects representing physical devices and store them in HashMap outletMap
+ * input command structure: outlets new (outlet name) (local ip address)
+ */
 public class NewOutletCommand extends Command {
     public NewOutletCommand(){
         super("new");
     }
 
-    @Override
     public String helpMessage() {
         return "new outlet class issue";
     }
 
+    //parse name and ip address. store them as key/val in outletMap
     public String run(String cmdInput){
         try {
             String deviceInfo = cmdInput.trim();

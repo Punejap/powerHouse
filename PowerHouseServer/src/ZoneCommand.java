@@ -1,3 +1,7 @@
+/**
+ * adds command classes relevant to zone control to array list
+ * input command structure: zone (rest of command)
+ */
 public class ZoneCommand extends Command {
 
     public ZoneCommand() {

@@ -6,6 +6,9 @@ import java.io.PrintStream;
 import java.net.Socket;
 import java.util.Scanner;
 
+/**
+ * Client connects to server, two way communication
+ */
 public class PowerHouseClient {
     public static void main(String[] args) throws IOException {
         String command, temp;
@@ -14,11 +17,6 @@ public class PowerHouseClient {
         InputStreamReader sc1 = new InputStreamReader(s.getInputStream());
         BufferedReader read = new BufferedReader(sc1);
         PrintStream p = new PrintStream(s.getOutputStream());
-/*
-        PrintStream start = new PrintStream(s.getOutputStream());
-
-        System.out.println(temp);
-*/
 
         while(true){
             command = sc.nextLine();
@@ -26,7 +24,5 @@ public class PowerHouseClient {
             temp = read.readLine();
             System.out.println(temp);
         }
-
-
     }
 }

@@ -1,21 +1,23 @@
-
-
+/**
+ * powers off single, existing outlets.
+ * command input structure: outlets off (outlet name)
+ */
 public class PowerOffOutletCommand extends Command {
 
     public PowerOffOutletCommand() {
         super("off");
     }
 
-    @Override
+
     public String helpMessage() {
-        return "power off outlet command class issue";
+        return "power off outlet command issue";
     }
 
-    @Override
+
     public String run(String cmdInput){
         //add validation
         String name = cmdInput.trim();
-        //look at server outlets hashmap, find outlet with matching name
+        //search HashMap outletMap for
         Outlet outlet = PowerHouseServer.outletMap.get(name);
         try {
             outlet.powerOff();

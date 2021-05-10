@@ -3,16 +3,19 @@ import java.net.URLConnection;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * applies existing schedule to zone
+ * input command structure: schedule zone (zone name) (schedule number)
+ */
 public class ZoneSchedulingCommand extends Command {
     public ZoneSchedulingCommand() {
         super("zone");
     }
 
-    @Override
     public String helpMessage() {
         return "zone scheduling command issue";}
 
-    @Override
+    //parse input, put outlets from zone into new hashmap, apply timer to each outlet
     public String run(String cmdInput) {
         int index = cmdInput.indexOf(" ");
         String name = cmdInput.substring(0, index).trim();
@@ -21,7 +24,6 @@ public class ZoneSchedulingCommand extends Command {
 
         try {
             String info = PowerHouseServer.scheduleMap.get(timer).createSettings();
-
                 for(Map.Entry<String, Outlet> entry : map.entrySet()){
                Outlet outlet = entry.getValue();
 

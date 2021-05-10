@@ -1,3 +1,6 @@
+/**
+ * uses Command.run() to add commands to ArrayList.
+ */
 public class RootCommand extends Command {
 
     public RootCommand(){

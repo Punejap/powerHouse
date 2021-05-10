@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
+/**
+ * contains methods to get average daily power consumption for existing outlet
+ * input command structure: usage avg (outlet name)
+ */
 public class UsageAverageCommand extends Command {
 
     public UsageAverageCommand() {
@@ -28,7 +32,6 @@ public class UsageAverageCommand extends Command {
         }
     }
 
-    @Override
     public String helpMessage() {
         return "failed to get usage";
     }

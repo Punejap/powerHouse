@@ -1,3 +1,7 @@
+/**
+ * adds power consumption commands to Array List children. used to delineate discrete inputs which use same string
+ * command structure: usage (rest of command)
+ */
 public class PowerConsumptionCommand extends Command {
     public PowerConsumptionCommand() {
         super("usage");

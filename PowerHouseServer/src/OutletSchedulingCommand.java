@@ -1,18 +1,19 @@
 import java.net.URL;
 import java.net.URLConnection;
 
+/**
+ * applies existing schedule to outlet
+ * input command structure: schedule outlet (outlet name) (schedule number)
+ */
 public class OutletSchedulingCommand extends Command {
     public OutletSchedulingCommand() {
         super("outlet");
     }
 
-    @Override
     public String helpMessage() {
         return "outlet scheduling command class issue";
     }
 
-
-    @Override
     public String run(String cmdInput) {
         int index = cmdInput.indexOf(" ");
             String name = cmdInput.substring(0, index).trim();

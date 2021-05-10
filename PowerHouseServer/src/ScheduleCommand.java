@@ -1,3 +1,7 @@
+/**
+ * adds top schedule related command classes to array list
+ * input command structure: schedule (rest of command)
+ */
 public class ScheduleCommand extends Command {
     public ScheduleCommand() {
         super("schedule");

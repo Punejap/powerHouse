@@ -1,20 +1,22 @@
-//this class will contain methods and fields to create custom schedules for components based on time
 //ex. set schedule for outdoor lights, turn specific components off during sleeping hours
 
 import org.json.simple.JSONObject;
 
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.PrintStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
-
+/**
+ * contains parameters for schedules in the form of variables. returns information in JSON format
+ */
 public class Schedule{
 
     public int timer;
     public String time, days, repeat, action;
 
+    /**
+     * @param timer schedule number, designates the schedule, must be 1 to 9
+     * @param time must be in 24:00 format
+     * @param days 7 digits sunday to saturday, 0 and - disable, 1 and chars enable
+     * @param repeat if 1, schedule action will repeat; if 0, schedule action occurs once
+     * @param action 0 disables power output, 1 enables power output
+     */
     public Schedule(int timer, String time, String days, String repeat, String action) {
         this.timer = timer;
         this.time = time;

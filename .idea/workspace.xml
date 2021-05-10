@@ -6,21 +6,22 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="zone, schedule list return added">
-      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/ConfigReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="79debd92-f065-4e42-8378-5057082511f5" name="Default Changelist" comment="this is it! this is what we are turning in for class.">
+      <change afterPath="$PROJECT_DIR$/PowerHouseServer/PowerHouseServer.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PowerHouseServer/src/test.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/PowerHouseServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/PowerHouseServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PowerHouseClient/src/PowerHouseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseClient/src/PowerHouseClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/AddToZoneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/AddToZoneCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ConfigReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ListOutletsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ListOutletsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ListSchedules.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ListSchedulesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ListSchedulesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ListSchedulesCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ListZonesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ListZonesCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/NewOutletCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/NewOutletCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/NewScheduleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/NewScheduleCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/NewZoneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/NewZoneCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/Outlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/Outlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/OutletScheduleToggleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/OutletScheduleToggleCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/OutletSchedulingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/OutletSchedulingCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/OutletsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/OutletsCommand.java" afterDir="false" />
@@ -31,7 +32,6 @@
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/PowerOnOutletCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/PowerOnOutletCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/PowerOnZoneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/PowerOnZoneCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/RootCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/RootCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/Runnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/Runnable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/Schedule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ScheduleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ScheduleCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerHouseServer/src/ToggleOutletCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/PowerHouseServer/src/ToggleOutletCommand.java" afterDir="false" />
@@ -54,6 +54,7 @@
         <option value="Interface" />
         <option value="module-info" />
         <option value="Class" />
+        <option value="UML Sequence" />
       </list>
     </option>
   </component>
@@ -74,6 +75,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Sequence" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -86,6 +89,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ben\IdeaProjects\powerHouse\PowerHouseServer\src" />
+      <recent name="C:\Users\Ben\IdeaProjects\powerHouse\PowerHouseServer\src\all" />
       <recent name="C:\Users\carso\Documents\School\CIS111\midterm\powerHouse\PowerHouseDriver" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -246,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620333383443</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="config">
+      <created>1620496506991</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1620496506991</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +284,12 @@
     <MESSAGE value="outlets list command" />
     <MESSAGE value="zone list added" />
     <MESSAGE value="zone, schedule list return added" />
-    <option name="LAST_COMMIT_MESSAGE" value="zone, schedule list return added" />
+    <MESSAGE value="config" />
+    <MESSAGE value="this is it! this is what we are turning in for class." />
+    <option name="LAST_COMMIT_MESSAGE" value="this is it! this is what we are turning in for class." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
